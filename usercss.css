@@ -1,0 +1,136 @@
+/* ==UserStyle==
+@name           WIP -- Cleaner Roblox
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A CSS theme trying to reduce clutter found in the Roblox website, currently extremely experimental.
+@author         7kayoh<git@7kayoh.net>
+==/UserStyle== */
+.content {
+    padding-top: 10rem;
+    max-width: 970px
+}
+
+div.footer {
+    display: none;
+}
+
+.col-xs-12.container-header h1,
+.games-list-header h1 {
+    font-size: 48px !important;
+}
+
+.nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 > li {
+    flex-grow: 0;
+    margin-right: 24px
+}
+
+.nav.rbx-navbar.hidden-xs.hidden-sm.col-md-5.col-lg-4 > li:last-child {
+    display: none;
+}
+
+.navbar-brand > .icon-logo-r {
+    display: none
+}
+
+.nav.navbar-right.rbx-navbar-icon-group > div:first-child {
+    display: none;
+}
+
+.rbx-header .navbar-search {
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    margin-top: 0;
+}
+
+.rbx-header .navbar-search .input-group,
+.rbx-header .navbar-search .input-addon-btn,
+.rbx-header .navbar-search .input-field {
+    height: 40px !important;
+    border-radius: 0;
+}
+
+.input-addon-btn {
+    width: 40px
+}
+
+.rbx-header .navbar-search .input-field {
+    padding-left: 36px
+}
+
+.rbx-header .navbar-search .clear-search {
+    top: 11px;
+    right: 10px;
+    opacity: 0.5;
+}
+
+.input-addon-btn > .icon-common-search-sm {
+    margin: 0 10px !important
+}
+
+.rbx-header .navbar-search .new-dropdown-menu {
+    width: calc(100% + 10rem) !important;
+    left: -5rem !important;
+    margin-top: 12px! important;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(18px);
+    background-color: rgba(242, 244, 245, 0.8) !important;
+    box-shadow: 0px 8px 24px hsl(0deg 0% 9% / 15%), 0px 4px 8px hsl(0deg 0% 85%), 0px 0px 1px hsl(210deg 7% 70%)
+}
+
+.dark-theme .rbx-header .navbar-search .new-dropdown-menu {
+    background-color: rgba(35, 37, 39, 0.8) !important;
+}
+
+#HomeContainer .col-xs-12.container-header {
+    margin: 0;
+}
+
+#HomeContainer {
+    float: none;
+    margin: auto;
+}
+
+.friend-list .friend .friend-name,
+.people-list .friend .friend-name {
+    margin: 6px 0 0;
+}
+
+#HomeContainer .game-home-page-container > div,
+.abp {
+    display: none;
+}
+
+#HomeContainer .game-home-page-container > div:nth-of-type(-n+4) {
+    display: block;
+}
+
+.game-home-page-container > div.container-header h2,
+.people-list-header h2,
+.container-header.games-filter-changer > h2 {
+    font-weight: 200;
+    opacity: 90%;
+}
+
+.section,
+.game-home-page-container {
+    padding: 12px 0 0 0
+}
+
+.clearfix.horizontal-scroll-window {
+    height: 360px;
+}
+
+.premium-container .page-refined,
+.premium-container .page-top {
+    background-image: none;
+}
+
+.page-top .top-header {
+    filter: invert(70%)
+}
+
+@-moz-document domain("www.roblox.com"),
+domain("web.roblox.com") {
+    /* Insert code here... */
+}
